@@ -1,0 +1,743 @@
+\documentstyle[aps,prb]{revtex} 
+\title{Anharmonic local modes in perfect and imperfect crystals} 
+\author{ D.Nevedrov$^{1}$,V.Hizhnyakov$^{2,3}$, A.J.Sievers$^3$} 
+\address{$^1$$NORDITA, Blegdamsvej 17, Copenhagen DK-2100, Denmark.\\
+$^2$Institute of Theoretical Physics, 
+University of Tartu, T\"{a}he 4, Tartu EE2400, Estonia;
+Institute of Physics, University of Tartu, Riia 142, Tartu EE2400, Estonia.\\ 
+$^3$Laboratory of Atomic and Solid State Physics and Materials Science 
+Center, Cornell University, Ithaca, New York 14853-2501, USA } 
+
+\begin{document} 
+\begin{abstract} 
+Local modes  of large amplitudes in nonlinear lattices are considered. 
+The applied method allows the reduction of nonlinear problem to a linear 
+inverse problem of phonons scattering on a local potential. 
+As an example, the method is applied for analytical description of ALMs
+in monatomic chain.
+Simple analytical expression for the softening of the
+local springs by an odd anharmonic mode, which accounts for 
+the long-range lattice relaxation, is obtain  and applied for  
+calculation of anharmonic gap modes in pure and 
+impure alkali halide crystals. It is found that at large amplitudes 
+the gap modes became unstable.
+\end{abstract} 
+
+                                                                        
+\section{Introduction} 
+Recent theoretical studies of nonlinear vibrational dynamics lead to 
+prediction of  long-living localized anharmonic modes (ALMs)
+in perfect anharmonic lattices
+\cite{dolgov,sivtak,page,kiselev,zavt} (see also review 
+\cite{pagesievers,flach} 
+and references therein). The main approach, which have been used  for
+investigation of these novel excitations, is based on direct numerical 
+integration of  classical equations of motions of finite lattices (usually 
+with the periodical boundary conditions).
+The approach is rather efficient in the case of simple 1D  lattices, 
+but requires rather expensive computations in the case of
+2D  and 3D lattices due to the
+fast growth of the number of numerical operations and computational
+time with increase of the number degrees of freedom. Therefore ALMs
+only in few real 3D crystals were studied so far
+(see, e.g. \cite{kisgap}, where existence of anharmonic gap
+modes  in ${\rm NaI}$ have been demonstrated). On the contrary, 
+in harmonic approximation calculations can be performed also 
+for macroscopically large pure and locally distorted crystals of any
+dimension.  
+
+Here we apply a method which makes use of harmonic approximation results
+for calculations of the anharmonic local modes (ALM). The method 
+allows one to reduce the nonlinear problem of ALMs to a properly 
+formulated problem of linear local dynamics. It is applicable for lattices of 
+arbitrary dimension. The method is efficient in the case of strongly 
+localized modes, when it allows one to obtain analytical solutions. Our 
+consideration is based on classic mechanics; account of quantum effects,
+causing multiphonon decay of the ALMs, see in \cite{hizhrev,hizhnev}. 
+
+The starting points for the method are the stability conditions of an
+ALM with respect to small fluctuations:
+\begin{itemize}
+\item
+All frequencies of the spectrum of these fluctuations should be real and  
+positive,  
+\item
+Spectrum of fluctuations should contain also the basic frequency $\omega_l$ of
+the ALM, i.e. there should be harmonic local mode (HLM) with the same 
+frequency $\omega_l$, 
+\item
+The ratios of the amplitudes of atoms of the HLM should coincide with that of 
+corresponding ALM.  
+\end{itemize}
+
+The physical meaning of the first condition  is obvious: the configuration 
+of the crystal lattice with the ALM must be stable (not meta-stable). 
+The last two conditions ensure that a solution, which describes  
+an ALM are stable  with respect to infinitesimal changes of the ALM phase. 
+They allow one to perform self-consistent calculations
+of the ALMs. This can be done as follows:
+choosing a trial shape of the ALM, we can determine the changes
+of the elastic springs, caused by the ALM \cite{kisgap}. 
+Then, by applying  the Lifshitz formula
+of local dynamics in harmonic approximation, the expressions for the
+HLM (and ALM) may be obtained, both for its frequency and amplitudes of 
+contributing atoms. These expressions allow the obtaining
+of the self-consistency conditions. The method  reduces the nonlinear 
+problem of 
+calculation of an ALM to a kind of a linear inverse problem of phonons 
+scattering on a local potential. If the ALM is strongly localized, then 
+the procedure is simple while one needs to calculate only few amplitudes. 
+This can be done analytically. 
+
+
+To check the method, we apply it first to the ALMs in monatomic chain 
+with hard quartic anharmonicity. We will show that one gets
+already known  results \cite{sivtak,page}.
+Then we will apply it to odd ALMs in pure and impure  
+alkali halide crystals with light and heavy ions and with account of both,  
+cubic and quartic anharmonicity (the ALMs under consideration are almost fully
+localized on the light atoms). Phonon spectra in these crystals are 
+calculated in the shell model \cite{shell,bilz,kristofel}.
+Anharmonic constants are determined from the Born-Coulomb-Mayer-Van der
+Waals potentials \cite{potential}. 
+
+\section{General} 
+Let us consider a vibrational system with the potential energy  
+\begin{equation} 
+{V} = \frac{1}{2} \sum_{n_{1} n_{2}}\!{V^{(2)}_{n_{1} n_{2}} 
+{U}_{n_{1}} {U} _{n_{2}}} 
++ \frac{1}{3}\! \sum_{n_{1} n_{2} n_{3}}\!\!{V^{(3)}_{n_{1} n_{2} n_{3}} 
+{U}_{n_{1}} {U}_{n_{2}} {U}_{n_{3}}} + \ldots\,, 
+\label{eq:v} 
+\end{equation} 
+where ${U}_{n}$ are the Cartesian displacements of atoms situated at the site 
+$n$, $V^{(2)},\, V^{(3)},\ldots$ are harmonic and anharmonic springs. The 
+displacements $U_n$ satisfy the following equations of motion 
+$ - M_n \ddot{U}_n = dV/dU_n$.
+where $M_{n}$ are the masses of atoms. We suppose that a ALM is excited
+at the site $n=0$ and its nearest neighbors. This excitation is the solution 
+of the equations of motion with exponentially decreasing  $|U_n|$ 
+with $|n| \rightarrow \infty$. As it is known \cite{sivtak,page} a
+solution, which corresponds to the ALM with the frequency  $\omega_l$ has the 
+form $U_n(t)= A_n \cos(\omega_l t) + \xi_n + O(\omega_l)$, where $O(\omega_l)$ 
+is the sum of small terms of the frequencies $3\omega_l$,  
+$5\omega_l, \ldots$ (i.e. the higher order harmonics; these harmonics are 
+neglected below).  The amplitudes $A_{n}$ and the shifts $\xi_{n}$ 
+(s.c. dc-components of the ALM) can be 
+found by equating the coefficients before the terms with the same time 
+dependence \cite{sivtak,page,flach}. 
+
+To take into account small fluctuations we present the displacements in the  
+form $\bar{U}_n = U_n + q_n/ \sqrt{M_n}$, where $q_n $ stands for the reduced  
+small displacement. The equations for ${q}_{n}$ read: 
+\begin{eqnarray}
+\ddot{q}_{n}=  
+\sum_{n'}{{\big (}V_{2 n n'}+W_{2 n n'}{\big )}{q}_{n'}},
+\label{eq:b}
+\end{eqnarray}
+where $V_{2 n n'}$ is the dynamical matrix in harmonic approximation, 
+\begin{equation}
+W_{2 n n'} = \frac{2}{\sqrt{M_{n} M_{n'}}} {\Big (} 
+\sum_{n_{1}} V^{(3)}_{n n' n_{1}}\xi_{n_{1}} + 
+\frac{3}{4} \sum_{n_{1} n_{2}} V^{(4)}_{n n'n_{1} n_{2}} 
+A_{n_{1}} A_{n_{2}} + \ldots {\Big )} \label{eq:c}
+\end{equation}
+(here the averaging of $\sim \cos{\!^2\!(\omega_l t)}$
+over vibrational period is made; the
+time-dependent terms $\sim \cos{k \omega_{l} t}$, $k=0,1,2,\ldots$ are 
+neglected; these terms are important in quantum mechanical description
+of fluctuations being responsible for the multiphonon decay of the ALM
+\cite{hizhrev,hizhnev}).  
+
+ 
+The shifts $\xi_n$ result from the lattice relaxation, caused by the
+forces, being  associated
+with the ALM (these forces differ from zero in the lattices 
+with non-zero odd anharmonicities). The relaxation of ions position 
+in the lattice extends far away, even if 
+the forces appear locally (in 3d lattices the shifts decrease as the 
+distance in the power $-3$; in 1d lattices they do not decrease 
+with the distance at all). This effect is essential to 
+account also in the case, when  contribution of few local 
+shifts to the springs $W_{2nn'}$ is taken into consideration, while 
+result for these shifts essentially depends on, whether the surrounding
+ions are allowed to shift, or not. 
+To account this effect, we expand the shifts over the phonon displacements 
+$x_{io}$: 
+$\xi_n= \sum_i e_{ni} x_{oi}$
+(in a perfect lattice $e_{in} \sim e^{(i\vec{k} \vec{n})}$, where $\vec{k}$
+is the wave vector).  The displacements $x_{0i}$  can be found
+if one adds the linear term   $\sim [\sum_{n n' n''} M_{n''}^{-1/2}\sum_i
+ V^{(3)}_{n n' n''} A_n A_{n'} e_{ni} + \ldots] x_i$ with respect to 
+phonon coordinates $x_i$, to phonon Hamiltonian
+$H_{ph} = H_{0,ph} + \tilde{V}_2,$, where $H_{0,ph}$
+is the phonon Hamiltonian of the harmonic lattice, 
+$\tilde{V}_2  = (1/2) \sum_{nn'}W_{2 n n'}q_n q_{n'} $
+describes the effect of the ALM to the phonons.  The shifts are equal
+\begin{equation}
+\xi_{n_{1}}\approx  \sum_{n'_{1} n_{2} n_{3}}
+ (M_{n_{1}} M_{n'_{1}})^{-1/2} V^{(3)}_{n'_{1} n_{2} n_{3}} 
+A_{n_{2}} A_{n_{3}}
+G_{n_{1} n'_{1}}(0) + \ldots. \label{eq:xi}
+\end{equation}
+Here and below 
+$$
+G_{n n'} (\omega) = \sum_j \frac{e_{n_{j}} e_{n'_{j}}}{(\omega -
+i \varepsilon)^2 - \omega_{j}^2}
+$$
+is the spectral Green's function of phonons
+\cite{economou,maradudin} (if needed, $G_{n_{1} n'_{1}}(0)$ 
+ should be determined self-consistently).
+Inserting Eq. (\ref{eq:xi}) into Eq. (\ref{eq:c}) one gets the expression 
+for the  renormalization of the dynamic matrix due to the ALM. The term
+$\sim G_{n_1 n'_1}(0)$, then describes the softening of the local springs,
+caused by cubic (and higher order odd) anharmonicity(is).  
+
+The HLMs, induced by the ALM, are determined by the poles of the spectral 
+Green's function. 
+To find this  matrix-function, we apply Lifshitz formula 
+\begin{equation}
+G_{nn'}(\omega) = G_{nn'}^{(0)}(\omega) + \sum_{n_1 n_2} 
+G^{(0)}_{nn_1}(\omega) W_{2n_1 n_2} 
+G_{n_{2} n' }(\omega),
+\end{equation}
+where $G_{nn'}^{(0)}(\omega)$ are the Green's functions of the perfect 
+lattice. These functions can be calculated by standard methods of lattice 
+dynamics \cite{maradudin}. 
+The ALM is stable if the Green's function does not have poles 
+on the imaginary axis of the complex $\omega$-plain.
+
+
+To find the frequency and shape of the HLM (and ALM) let us 
+introduce the 
+configurational coordinates $Q_{\nu} = \sum_{n} S_{\nu n} q_n,$ and  
+$\tilde{Q}_{\mu} = \sum_{\nu} s_{\mu \nu} (\omega) y_{\nu}$. The first 
+transformation is chosen to diagonalize the perturbational quadratic form 
+$\tilde{V}_2$: $\tilde{V}_2 = \sum_{\nu} \eta_{\nu} Q_{\nu}^2/2.$
+The second transformation diagonalizes the dimensionless 
+Green's function matrix $\check{G}_{\nu \nu'}=
+\sqrt{\eta_{\nu} \eta_{\nu'}}\bar{G}^{(0)}_{\nu\nu'}(\omega)$, 
+($\bar{G}^{(0)}_{\nu\nu'}(\omega)$ are the lattice Greens functions  
+in $Q_{\nu}$-space): 
+$\tilde{G}^{(0)}_{\mu \mu'}(\omega) = \delta _{\mu \mu'} 
+\sum_{nn'} R_{\mu n}R_{\mu n'} G^{(0)}_{n n'} (\omega)$; here
+$R_{\mu n} (\omega) =  
+\sum_{\nu} s_{\mu \nu}(\omega) \sqrt{\eta_{\nu}} S_{\nu n}$. 
+In the $\tilde{Q}_{\mu}$-representation the Lifshitz formula gives 
+$\tilde{G}_{\mu \mu}(\omega) =  
+{\tilde{G}^{(0)}_{\mu \mu}(\omega)}{(1 -\tilde{G}^{(0)}_{\mu \mu}(\omega))}.$
+
+From symmetry considerations one can chose the configurational 
+coordinate $\tilde{Q}_{\mu}$ which corresponds to the ALM under investigation. 
+Frequency of the ALM (and of the HLM) satisfies the relation
+\begin{equation} 
+\tilde{G}^{(0)}_{\mu \mu}(\omega_l) = 1, \label{eq:G} 
+\end{equation} 
+while the amplitude (not normalized) of the $n$' atom in the HLM (and in the 
+ALM) is given by the formula: 
+\begin{equation}
+a_{\mu n} = \frac{R_{\mu n}(\omega_l)}{\sqrt{|G^{(0)'}_{\mu \mu} (\omega_l)|}},
+\label{eq:d}
+\end{equation} 
+where  
+$G^{(0)'}_{\mu \mu}(\omega) = d G^{(0)}_{\mu \mu}(\omega)/ d \omega$. 
+Using normalization $\sum_n a_{\mu n}^2 = 1$ we obtain: 
+\begin{equation} 
+a_{\mu n} = 
+\frac{R_{\mu n}(\omega_l)}{\sqrt{|\sum_{\nu} s_{\mu \nu}(\omega_l)^2 
+\eta_{\nu}|}}. 
+\label{eq:e}
+\end{equation} 
+The relations (\ref{eq:e})  is the self-consistency condition, 
+which gives the set of equations for $a_{\mu n}$. 
+In combination 
+(\ref{eq:G}) they allow one to find the amplitudes $A_{n}$ and shifts
+$\xi_n$ of the ALM of 
+given frequency $\omega_l$. The method works better for strongly localized 
+ALMs with high frequency, when the number of contributing amplitudes $A_n$
+(and equations to be solved) is small. 
+
+In the case of high frequency of the ALM  ($\omega_l \gg \omega_M$, $\omega_M$ 
+is maximal phonon frequency) the nondiagonal elements of the  
+$G^{(0)}_{nn'}(\omega_l)$ are much smaller than the diagonal ones. Then 
+$\check{G}^{(0)}_{\nu \nu'}(\omega_l) \approx \delta_{\nu \nu'}  
+G^{(0)}_{00}(\omega_l)$, i.e. the Greens-function matrix 
+is diagonalized simultaneously with $\tilde{V}_2$. In this case the normalized
+amplitudes of the ALM can be determined by simple self-consistency 
+condition $a_n =  S_{\nu n}$; absolute amplitudes one can  find from the
+relation $G_{\nu \nu}(\omega_l) = \eta_{\nu}^{-1}$. 
+
+If a immobile ALM is considered and  the limited number of atomic
+displacements is taken into consideration
+then the quadratic form
+$\tilde{V}_2$ does not  depend on the totally-symmetric coordinate. 
+This means that all displacements, which contribute to the diagonalized 
+quadratic form
+$\tilde{V}_2$, are orthogonal to this coordinate. This means that
+the sum of displacements of all atoms, which contribute to the ALM,
+should be equal zero: $\sum_n A_n = 0$. The same holds for the sum of 
+moment of atoms at any time-moment. This property of the ALMs stands for the
+immobility condition.  
+
+\subsection{Even and odd ALMs in monatomic chain} 
+First, in order to check the method, we apply it to description of
+ALMs in monatomic chain. The potential 
+energy of the chain with account of the nearest-neighbor interactions has the 
+form 
+$$ 
+V=\sum_n \sum_r (V^{(r)}/r) (U_{n+1} -U_n)^r. 
+$$ 
+
+In harmonic approximation ($V^{(2)}>0,\,\, V^{(r)}=0,\,\, r\geq 3$) for 
+$\omega/\omega_M > 1$ the Green's functions of the chain equal \cite{economou}
+$$
+G^{(0)}_{nn'}(\omega) = \frac{\omega_M (-\rho)^{|n-n'|}}
+{16 \omega V^{(2)} \sqrt{\omega^2 /\omega_M^2 -1}},
+$$ 
+$\omega_M = 2\sqrt{V^{(2)}}$ is the top phonon frequency,
+$\rho = (\omega/\omega_M - \sqrt{\omega^2/\omega_M^2-1})^2 < 1$.
+In the limit of strong amplitudes and high frequency one gets two strongly 
+localized  ALMs \cite{sivtak,page}: 
+\begin{enumerate}
+\item the odd mode with $A_n= A_{-n}$,  
+$A_1 \simeq -A_0/2$, $|A_n|\ll |A_1|$, $n \ge 1$ and 
+\item the even mode with 
+$A_{n+1} = -A_{-n}$, $|A_{n+1}| \ll |A_0|$, $n \ge 1$. 
+\end{enumerate}
+However only the even mode is stable with respect to small
+fluctuations \cite{kissievers}.
+Below we give analytical description of these modes
+in the chain with quartic($r=4$) anharmonicity.
+In this case the poles of the Green's function can shift only to higher
+$\omega$ values. Therefore $Im G(i |\omega|) = 0$ and the ALMs are stable.
+
+\subsubsection{Even mode}
+Let us consider first the even mode. With account of four central atoms 
+displacements the contribution of the ALM to the potential energy of phonons 
+has the form 
+$$
+\tilde{V}_2 = K_4 A_0^2 [b((q_2-q_1)^2+(q_0 -q_{-1})^2)+(q_1 - q_0)^2], 
+$$
+where $K_4= 6V^{(4)}$, $b=(1+\beta)^2/4$, $\beta = A_2/A_0$.  
+Two following even modes contribute to the $\tilde{V}_2 $ and ALM: 
+$$
+y_1 = {q_0-q_1}{\sqrt{2}},\quad y_2 = {q_2-q_{-1}}{\sqrt{2}}.
+$$
+In the strong localization limit the main contribution is given by $y_1$. 
+Contribution of $y_2$ depends on the $\omega_l$ being larger for smaller 
+$\omega_l$. Our task is to describe the last dependence. In $y_1,\,y_2-$ 
+subspace  $\tilde{V}_2 = K_4((2+b)y_1^2 - 2b y_1y_2 + b y_2^2)$. 
+This quadratic form is diagonalized in the rotated basis on the angle
+$\phi =\arctan{(b)}/2$.
+In the limit of high frequency $\omega_l$ the self-consistency condition  
+reads 
+$\sin{\phi}=\beta \approx b/2 = (1+\beta)^2/8.$
+One gets 
+$\beta \approx 1/6$ in agreement with the corresponding calculation of $\beta$
+on the basis of the nonlinear equations of motion \cite{page}. 
+
+To describe $\omega_l-$dependence of $\beta$ we should find coordinates 
+$\tilde{Q}_{1,2}$ which diagonalize the Green's function matrix 
+$\check{G}^{(0)}_{\nu \nu'}= 
+G^{(0)}_{00}(\sqrt{\eta_{\nu}\eta_{\nu'}}g_{\nu\nu'})$, $\nu, \nu' =1,2$,
+$\eta_{1,2} =K_4 A_0^2 (1+b \pm \sqrt{1-b^2})$,
+\begin{eqnarray}
+g_{11} &=&\rho_{11}\cos^2{\phi} +
+\rho_{22}\sin^2{\phi} + \rho_{12} \sin{(2\phi)}, \nonumber \\
+g_{22} &=&\rho_{11}\sin^2{\phi} +
+\rho_{22}\cos^2{\phi} - \rho_{12} \sin{(2\phi)}, \nonumber \\
+g_{12} &=&-\rho_{12} \cos{(2\phi)} + (\rho_{11}- \rho_{22})
+\sin{(2\phi)}/2,  \nonumber
+\end{eqnarray}
+where
+$\rho_{11} = 1+\rho$, $\rho_{22} = 1+\rho^3$, $\rho_{12}=\rho(1+\rho)$.
+The diagonalization is achieved by additional rotation on angle
+\begin{equation}
+\alpha=\arctan{( 2\sqrt{\eta_1 \eta_2} g_{12}
+/(\eta_1 g_{11}-\eta_2 g_{22}))}/2.
+\label{eq:f}
+\end{equation}
+The self-consistency condition now is 
+$\beta = \sin{(\alpha +\phi)}$.
+In the strong localization limit it gives     
+$\beta \approx (1+5\rho/2\sqrt{2}(+\rho))/6$.
+The dependence of the dimensionless frequency of the mode 
+$\Omega_l = \omega_l/\omega_M$ on the amplitude $A_l$ is given by the equation
+(\ref{eq:d}) with $\nu =1$, where
+\begin{equation} 
+\tilde{G}^{(0)}_{11}(\omega_l)= K_4 A_0^2G^{(0)}_{00}(\omega_l) 
+{\Big (}1+b + \sqrt{1-b^2}{\Big )}
+{\Big [}g_{11}\cos^2{\alpha} + g_{22} \frac{\eta_2}{\eta_1}\sin^2{\alpha} + 
+g_{12}\sqrt{\frac{\eta_2}{\eta_1}}\sin{(2\alpha)}{\Big ]}. 
+\end{equation}
+For $\omega_l > 1.15 \omega_M$ given formulas describe the ALM
+very well: the contributing amplitudes of the next nearest atoms is less 
+than $10^{-2}$, there-at their contribution to the energy of the ALM is less 
+than $10^{-4}$. 
+
+\subsubsection{Odd mode}
+Let us consider now the odd ALM with account of displacements of five atoms. 
+The mode under consideration satisfies the parity and immobility conditions 
+$A_n=A_{-n}$, $A_2+A_1+A_0+A_{-1}+A_{-2}=0$, which give 
+$A_1=-A_0 (1/2 + \beta)$, $\beta = A_2/A_0$. The contribution of the ALM to 
+the potential energy of phonons equals 
+$$ 
+\tilde{V}_2 = \bar{K}_4 A_0^2 {\Big [}
+\bar{b}((q_2-q_1)^2 + (q_{-2} - q_{-1})^2) +  
+(q_1-q_0)^2 + (q_{-1} -q_0)^2{\Big ]}, 
+$$ 
+where $\bar{K}_4=9V^{(4)}(1+2\beta/3)^2/8$, 
+$\bar{b}=(1+4\beta)^2/(3+2\beta)^2$. Two odd modes, which give contributions 
+to the ALM read: 
+$$ 
+y_1=(2q_0 -q_1-q_{-1})/\sqrt{6},\,\,\, 
+y_2=(3q_2 + 3q_{-2} - 2q_0 - 2q_1- 2q_{-1})/\sqrt{30}. 
+$$ 
+In the $y_{1,2}$-space  $\tilde{V}_2 = \bar{K}_4 [(3+\bar{b}/3)y_1^2 -  
+(2\sqrt{5}/3)\bar{b} y_1 y_2 + (5/3) \bar{b} y_2^2]$. This quadratic form is 
+diagonalized in the rotated basis on the angle  $\phi \approx
+\arcsin{(b/2)}$,
+where $b = 2\sqrt{5}\bar{b}/(9-4\bar{b})$. In the limit
+of large $\omega_l/\omega_M$ the main contribution to the ALM is given by
+the $y_1$-mode; contribution of the $y_2$-mode is given by the self-consistency
+condition 
+$\beta \approx 3\sin{(\phi)}/ 2\sqrt{5} \approx \bar{b}/6$. Taking 
+$\bar{b} \approx 1/9$ one gets the value $\beta = 1/54$ in agreement 
+with \cite{page}. A more 
+accurate approximation is $\beta \approx 3/131$. 
+
+The $\omega_l-$dependence of 
+$\beta$ and $A_0$- dependence of $\omega_l$ can be found in the same way 
+as for the even mode. In this case 
+$$
+\eta_{1,2} = \frac{K_4A_0^2}{2\sqrt{5} + 4b} (3\sqrt{5} +15 b + 
+(3\sqrt{5} + 9 b))(1 \pm \sqrt{1-b^2}).
+$$
+For small $\beta$ one gets
+$
+\eta_1 \approx K_4A_0^2 (48 - 40\beta)/18,
+\quad \eta_2 \approx \eta_1 (4+ 27 \beta)/64.
+$
+The factors $g_{\nu \nu'}$ are also determined by the same expressions 
+as in the even ALM case but
+with the following $\rho_{\nu\nu'}$:
+\begin{eqnarray}
+\rho_{11} &=& 1+ \rho (4 +\rho)/3,\nonumber \\
+\rho_{22} &=& 1+ \rho (4 -8 \rho + 
+12 \rho^2 + 9 \rho^3)/ 15,
+\nonumber \\
+\rho_{12} &=& \rho (5 + 8\rho + 3\rho^2)/15. \nonumber
+\end{eqnarray}
+The self-consistency condition in this case is:
+\begin{equation}
+\beta =\frac{3 \sin{(\phi+\alpha)}}{2\sqrt{5} \cos{(\phi+\alpha)} 
+-2\sin{(\phi+\alpha)}},
+\end{equation}
+where $\alpha$ is determined by (\ref{eq:f}); there-at  expressions for
+$\eta_{1,2}$  and for $\rho_{\nu\nu'}$ are given above,
+$g_{\nu\nu'}$ are also determined by the same formulae as in the even ALM case.
+
+If $\omega_l > 1.15 \omega_M$ then the odd ALM is well localized 
+($\beta < 0.065$),  more than 99.98 percent of energy of the mode 
+come from 4 central atoms. 
+
+The calculated dependences of $\Omega_l$ and $\beta$ on amplitude
+for even and odd modes are plotted on Fig.1.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{ALMs in alkali halides} 
+We present here calculations of odd anharmonic local modes in a simple
+cubic lattice. We consider the case, when the ALM is strongly localized 
+on the central ion.  To describe  the effect of the ALM  on the lattice 
+vibrations, we take into account the pair interactions of the
+central ion with all other ions, described by the potential operator
+\begin{equation} 
+{V} = \sum_{\alpha}\sum_{\vec{n}}\sum_{m=1}^{\infty} \frac{1}{m} V^{(m)}_{ 
+\vec{n}_{\alpha}} {\big (} {R}_{\vec{n}_{\alpha}} {\big )}^{m}\,. 
+\end{equation} 
+Here $\alpha = x,\:y,\:z$ are the directions of crystal axes,  
+$\vec{n} = (n_{x},n_{y},n_{z})$ is the vector of the lattice sites, 
+$\vec{n}_{\alpha}$ is the vector of the site nearest to $\vec{n}$ in $\alpha$ 
+direction, $V^{(m)}_{\vec{n}\alpha} = V_m$ is the $m$-th derivative of the 
+pair potential between atoms (ions) $\vec{n}$ and $\vec{n}_{\alpha}$ at their 
+distance $R_{0\vec{n}_{\alpha}}$ 
+\begin{equation} 
+{R}_{\vec{n}_{\alpha}} = \sqrt{(R_{0 n_{\alpha}} + {r}_{\alpha   
+\vec{n}_{\alpha}})^{2} 
++{\rho}_{\alpha \vec{n}_{\alpha}}^{2}} - R_{0\vec{n}\alpha} 
+\end{equation} 
+is the distance between the nearest neighbors in the $\alpha$- 
+direction, ${r}_{\beta\vec{n}_\alpha}=q_{\beta\vec{n}}-q_{\beta  
+\vec{n}_{\alpha}}$, $q_{\beta}$ is the $\beta$-component of the displacement  
+vector $\vec{q}_{\vec{n}}$ of the atom $\vec{n}$,  
+$\rho^{2}_{\alpha \vec{n}_{\alpha}}    
+= r^{2}_{\vec{n}_{\alpha}} -
+{r}_{\alpha \vec{n}_{\alpha}}^{2}$
+
+${r}_{\vec{n}_{\alpha}}^{2} = {r}^{2}_{x\vec{n}_{\alpha}} + 
+{r}^{2}_{y\vec{n}_{\alpha}} + {r}^{2}_{z \vec{n}_{\alpha}}$. 
+By expanding ${V}$ in the power series of displacement operators  
+${r}_{\alpha\vec{n}_{\alpha}}$one gets 
+\begin{eqnarray}  
+V & = & \sum_{\alpha ,\vec{n}_{\alpha}}
+\frac{1}{2}  
+[V_2 r^2_{\alpha \vec{n}_{\alpha}} +  
+V'_2 \rho^2_{\alpha \vec{n}_{\alpha}}  + 
+\frac{1}{3} V_3{r}^3_{\alpha n_{\alpha}} + \nonumber\\ 
+ & & 
+V'_3 r_{\alpha n_{\alpha}} 
+\rho^2_{\alpha\vec{n}_{\alpha}}+ 
+\frac{1}{12} V_4 r^4_{\alpha n_{\alpha}}  
+\frac{1}{2} V'_4 r^2_{\alpha n_{\alpha}}{\rho}^2_{\alpha n_{\alpha}} +
+\frac{1}{4} V'' \rho^2_{{\alpha n_{\alpha}}} + \ldots],
+\nonumber \\ 
+\end{eqnarray} 
+where 
+\begin{eqnarray} 
+V'_2 &=& V_1 R_0^{-1},\quad V'_3 = (V_2 - V'_2)R_0^{-1}, \nonumber \\ 
+V'_4 &=& R_0^{-1}V_3 - 2R_0^{-2}(V_2 - V'_2),\quad 
+V''_4 = R_0^{-2} (V_2 - V'_2), 
+\end{eqnarray} 
+$V_{2}$, $V_{3}$ and $V_{4}$ make account of the central, while $V'_{2}$, 
+$V'_{3}$, $V'_{4}$ and $V''_{4}$ of the non-central forces. The potential 
+considered does not take account of the covalent interaction which leads to 
+the chemical bonding. This (covalent) interaction can, however, be easily 
+included in calculations by introducing additional terms of the type $V_{2}$, 
+$V_{3}$ and $V_{4}$. 
+
+As it is known harmonic non-central springs $V'_2$ are normally $5$ to $10$ 
+times smaller than the central springs $V_2$. Our calculations of $V_3$ and 
+$V'_3$ for alkali halides show that $V'_3/V_3$ is even smaller than 
+$V'_2/V_2$. The same holds also for quartic and higher order anharmonic terms.
+Therefore, as a first step, only central forces may 
+be accounted. 
+
+We calculate a strong local vibration of light impurity or host 
+atom (ion) situated at the origin of our reference frame. In this case 
+solutions of classical equations of motion, 
+corresponding to the local mode, satisfy the conditions: 
+$|A_{0}| \gg |A_{\vec{n}}|$. This allows one to suppose that the mode is well 
+localized on the atom at the site $n=0$. Then in the approximation of central 
+forces only coordinates of the central atom and of the directed to this atom 
+components of coordinates of the nearest neighbor atoms contribute to the 
+relaxation. We chose: 
+${q}_1 = {x}_0$, ${q}_2 = {x}_{1x}$, ${q}_3 = {x}_{-1x}$, ${q}_4 = {y}_0$, 
+${q}_5 = {y}_{1y}$, ${q}_6 = {y}_{-1y}$, ${q}_7 = {z}_0$, ${q}_8 = {z}_{1z}$, 
+${q}_9 = {z}_{-1z}$. In this representation the impurity induces change of 
+matrix $\bar{V}_2$; corresponding perturbation matrix is 
+\[ V = \left (\begin{array}{ccc} 
+w_x&0&0\\\noalign{\medskip} 
+0&w_y&0\\\noalign{\medskip} 
+0&0&w_z\end{array} 
+\right ) , \;\; 
+w_{\alpha} = \left (\begin{array}{ccc} 
+\beta_{\alpha}&-\gamma_{\alpha}&-\gamma_{\alpha}\\\noalign{\medskip} 
+-\gamma_{\alpha}&\gamma_{\alpha}&0\\\noalign{\medskip} 
+-\gamma_{\alpha}&0&\gamma_{\alpha}\end{array} 
+\right ) , \] 
+($\alpha = x,y,z$). In harmonic approximation $\beta$ and $\gamma$ do 
+not depend on $\alpha$: $\gamma = \Delta V_2$ is the change of the magnitude 
+of central elastic constants due to defect atom,  
+$\beta = 2\gamma+\omega^2 (1-M/M_1)$, $\omega$ is the frequency of the
+normal 
+mode, $M/M_1$ is the ratio of impurity and host central atom masses.
+Quartic 
+anharmonicity leads to amplitude dependent corrections of elastic constants 
+and to their dependence of $\alpha$: 
+\[
+\beta_{\alpha} = \omega^2{\Big (}1- \frac{M}{M_1}{\Big )}+
+2\gamma_{\alpha}, 
+\]
+\begin{equation}
+\gamma_{\alpha} = \Delta V_2+\frac{1}{4}  A^2_{\alpha} {\Big \{ } V_4 +
+\frac{V_3^2}{M_2} (G_{22}^{(0)}(0)-G_{23}^{(0)}(0)) {\Big \} }, 
+\label{eq:gamma}
+\end{equation} 
+$A_{\alpha}$ is the $\alpha$'s Cartesian component of the amplitude of the 
+local mode, $M_2$ is the mass of the nn to central ion, 
+$G_{nn'}^{(0)}(0)$  are Greens functions of perfect lattice.
+Here we neglect higher order terms with respect to $A^2$. 
+This approximation holds if $ |A| < d A_0$, where $A_0=\sqrt{V_3/V_5}$, 
+$d=1$
+for ALM in (100)direction, $d=\sqrt{2}$ in (110) direction and $d=\sqrt{3}$
+in (111) direction. In ${\rm NaI}$ $A_0 = 1.37 \AA$ in ${\rm KI}$ 
+$A_0 = 1.36 \AA$, in ${\rm KCl}$ $A_0= 1.28 \AA$.
+   
+According to our calculations, in alkali halide crystals 
+the second, negative term in the wavy brackets 
+in (\ref{eq:gamma}) in its absolute value remarkably (typically $\sim 5$ 
+times) exceeds the first term $V_4$. As a result, the term in the wavy 
+brackets all-totally is negative. This means that in alkali halide crystals
+ALMs can appear only in the gaps of the phonon spectrum. This conclusion
+is in agreement with previous result of Kiselev and Sievers \cite{kiselev},
+who showed that in ${\rm NaI}$  intrinsic local modes
+can appear in the gap of the phonon spectrum 
+if amplitude of {\rm Na) vibrations in (111) direction exceeds $0.4 \AA$.
+
+Note that the softening essentially is the result of the long-range
+relaxation of the positions of ions in the lattice. If one would allow only 
+the nn ions to shift, then the second term  in the wavy brackets 
+of Eq. (\ref{eq:gamma}) would be $- V_3^2/ V_2 \approx -V_4$ with few percent
+accuracy and the full  factor would be small, either positive or negative.
+  
+
+To calculate ALMs we need to find the perturbed Green's functions  
+\[ G = \left (\begin{array}{ccc} 
+G_x&0&0\\ \noalign{\medskip} 
+0&G_y&0\\ \noalign{\medskip} 
+0&0&G_z\end{array}
+\right ) , \;\;
+G_{\alpha} = \left (\begin{array}{ccc} 
+G_{\alpha 11}&G_{\alpha 12}&G_{\alpha 12}\\ \noalign{\medskip} 
+G_{\alpha 12}&G_{\alpha 22}&0\\ \noalign{\medskip} 
+G_{\alpha 12}&0&G_{\alpha 22}\end{array} 
+\right ) , \] 
+This can be done by applying the Lifshitz formula 
+\[ G_{\alpha nn'} =
+([I-G^{(0)}w_{\alpha}]^{-1}G^{(0)})_{nn'}\].
+
+
+ 
+We performed calculation of ALMs associated with the strong 
+local vibrations of $\{rm F}^-$, ${\rm{Cl}^-$ and ${\rm{Na}^-$ ions
+in different alkali halide crystals with the gap in phonon spectrum,
+for these ions being both, host and impure.  
+The results are presented  in Figs 2 and 3.
+The results for NaI are in agreement with direct 
+calculations of vibrations of ${\rm Na}^-$ ion  in (111) direction in 
+this lattice at large amplitudes \cite{kiselev}.
+
+We also  we found that
+at the critical amplitude $A_{cr} \geq 0.6 d \AA$r
+a pole of the Greens functions at an small imaginary frequency appear,
+which means that at  these  amplitudes the ALMs became unstable.
+This is a natural result of the local softening of the lattice, which increases
+fast with the amplitude $A$ (in our approximation as $A^2$). 
+Note that $A_{cr}^2 \ll A_O^2$, which means that  
+neglected higher-order anharmonic terms should not change this result.    
+
+In conclusion, the  localized anharmonic modes in pure and impure crystals 
+are considered. The applied method allows the reduction of nonlinear problem 
+to a linear inverse problem of phonons scattering on a local potential. 
+The methods is verified by consideration of            
+intrinsic local  modes in monatomic chain. A simple analytical formula 
+for the  softening of the
+local springs by an odd anharmonic mode,  is obtain  and applied for  
+calculation of anharmonic gap modes in pure and 
+impure alkali halide crystals. It is found that at large amplitudes 
+($\geq 1 \AA$ in (111) direction) the gap modes became unstable.
+ 
+
+
+\section{Acknowledgment} 
+This research was supported by the Estonian Science Foundation, Grant 
+No.\~3864,$\ldots$.  D.N. thanks NORDITA for hospitality and financial support.
+ 
+\begin{thebibliography}{99}
+
+\bibitem{dolgov}
+A.S.Dolgov, Fiz. Tverd. Tela (Leningrad) {\bf 28}, 1641 (1986)
+[Sov. Phys. Solid tate {\bf 28}, 907 (1986)].
+\bibitem{sivtak}
+A.J.Sievers, S.Takeno, Phys. Rev. Lett. {\bf 61}, 970 (1988).
+\bibitem{page}  
+J.B.Page, Phys. Rev. B {\bf 41}, 7835 (1990).
+\bibitem{kiselev}
+S.A.Kiselev, S.R.Bickham, and A.J.Sievers, Phys. Rev. B {\bf 48},
+13508 (1993)
+\bibitem{zavt}
+G.S.Zavt {\it et al.}, Phys. Rev. E {\bf 47}, 4108 (1993).
+\bibitem{pagesievers}
+J.B.Page, A.J.Sievers,$"Unusual Anharmonic Local Mode Systems"$,
+in {\it Dynamical Properties of Solids}, G.K.Horton and 
+A.A.Maradudin eds. (North Holland, Amsterdam, 1995),Vol. 5,  Ch. 3.
+\bibitem{flach}
+S.Flach, C.R.Willis, Physics Reports {\bf 295},181 (1998).
+\bibitem{kisgap}
+S.A.Kiselev, and A.J.Sievers, Phys. Rev. B {\bf 55}, 5755 (1997).
+\bibitem{hizhrev}  
+V.Hizhnyakov, Phys.Rev. B {\bf 53}, 13981 (1996); Europhys. Lett., 
+{\bf 45} 508 (1999).  
+\bibitem{hizhnev}  
+V.Hizhnyakov and D.Nevedrov, Phys. Rev. B {\bf 56}, R2809 (1997). 
+\bibitem{shell} 
+A.D.B.Woods, W.Cochran, and B.N.Brockhouse,
+Phys. Rev. {\bf 119}, 980 (1960);
+A.D.Woods, B.N.Brockhouse, R.A.Cowley, and W.Cochran,
+Phys. Rev {\bf 131}, 1025 (1963).
+R.A.Cowley, W.Cochran, B.N.Brockhouse, and A.D.B.Woods,
+Phys. Rev {\bf 131}, 1030 (1963).
+\bibitem{bilz}
+H.Bilz, W.Kress, {\it Phonon Dispersion Relations in
+Insulators} (Springer, Berlin, 1979).
+\bibitem{kristofel}
+N.N.Kristofel, {\it Theoriya primesnyh centrov malyh radiusov
+v ionnyh kristallah}  (Nauka, Moscow, 1974).
+\bibitem{potential}
+J.Michielsen, P.Woerlee, F.v.d.Graaf and J.A.A.Ketelaar, J. Chem. Soc. Faraday Trans. II {\bf 71}, 1730 (1975).
+\bibitem{kosevich}
+A.M.Kosevich and A.S.Kovalev, Zh. Eksp. Teor. Fiz. {\bf 67}, 1793 (1974)
+[Sov. Phys. JETP {\bf 40}, 891 (1974)].
+\bibitem{economou} 
+E.N.Economou, {\it Green's Functions in Quantum Physics} 
+(Springer-Verlag, Berlin, 1983). 
+\bibitem{maradudin}  
+A.A.Maradudin {\it et al.} {\it Theory of Lattice Dynamics in  
+Harmonic Approximation} (Academic, New York, 1963);   
+A.A.Maradudin, {\it Theoretical and 
+Experimental Uspects of the Effects of Point Defects and Disorder of the  
+Vibrations of Crystals} (Academic, New York 1966).
+
+\end{thebibliography} 
+
+\bigskip
+
+\begin{center}
+{\Large {\bf Figure captions}}
+\end{center}
+
+\bigskip
+
+\noindent
+{\bf Figure 1.} Anharmonic local modes in monatomic chain with 
+quartic anharmonicity; 
+$\beta$ (solid lines) and $A_l$ (dot-dashed lines) vs. 
+$\omega_l$ for even and odd modes. We used for calculations 
+$\omega_M=1$ and $V^{(4)}=1$.
+
+\noindent
+{\bf Figure 2.} Frequency of the impurity anharmonic gap mode 
+($w_l/w_m$) vs. amplitude (in $\AA$). a) ${\rm KI:Na}$, 
+b) ${\rm KI:Cl}$; [100] -- solid line, [110] -- dashed line,
+[111] -- dot-dashed line.
+
+\noindent
+{\bf Figure 3.}  Frequency of the anharmonic gap mode  ($w_l/w_m$) vs.
+amplitude (in $\AA$) in pure lattices; a) ${\rm NaI}$, b) ${\rm KI}$,
+c)  ${\rm NaBr}$  and ${\rm RbF}$; 
+[100] -- solid line, [110] -- dashed line,
+[111] -- dot-dashed line.
+
+\end{document} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

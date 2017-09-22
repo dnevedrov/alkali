@@ -1,0 +1,512 @@
+\documentclass{article}
+\oddsidemargin=-0.5cm
+\topmargin=0.0cm
+\usepackage[dvips]{color,graphicx}
+\textwidth=17cm
+\usepackage[dvips]{color,graphicx}
+\pagestyle{empty}
+\textheight=23cm
+\renewenvironment{thebibliography}[1]
+       { \begin{list}{\arabic{enumi}.}
+        {\usecounter{enumi}\setlength{\parsep}{0pt}
+        \setlength{\itemsep}{0pt} \settowidth
+        {\labelwidth}{#1.}
+        \settowidth{\leftmargin}{#1.\rule{3mm}{0mm}}
+        \sloppy}}{\end{list}}
+\begin{document}
+\begin{Huge}
+\noindent
+{\bf{
+\textcolor{blue}
+{We study hole states in the antiferromagnetically (AF) ordered CuO$_2$
+planes of cuprate perovskites within the three-band
+Hubbard model and with a self-consistent calculation of the Cu spin
+polarization.
+Both the Cu$-$O hybridization and the
+O$-$O transfer are taken into account.
+}
+
+
+\vspace{10mm}
+
+\noindent
+\textcolor{magenta}{
+The model Hamiltonian for CuO$_2$ planes in the
+Hartree-Fock approximation of the original
+Hubbard Hamiltonian reads
+\textcolor{red}{\cite{oles,siebold}} }
+
+
+$$ H=\sum_{\sigma}H_{0\sigma}+H_{\rm int} $$
+%                                                 1
+\[ H_{0\sigma}=\epsilon_d \sum_n n_{n\sigma}^d
+          + \epsilon_p \sum_m n_{m\sigma}^p
+       +T \sum_{nm} \left (d\,_{n\sigma}^\dagger p\,_{m\sigma}
+                  + {\rm h.c.} \right ) \]
+$$
+  +t \sum_{mm'} \left (p\,_{m\sigma} ^\dagger p\,_{m'\sigma}
+                  + {\rm h.c} \right )
+$$
+%                                                   2
+\[ H_{\rm int} = U\sum_n n_{n\sigma}^d n_{n-\sigma}^d \]
+
+\noindent
+\textcolor{blue}
+{$d$ $(d^\dagger)$ and $p$ $(p \, ^\dagger)$ are electronic annihilation
+(creation) operators on Cu and O orbitals,
+%\noindent
+$U \approx 8$ eV, $T \approx 1$ eV, $t \approx 0.3$ eV,
+$\epsilon = \epsilon_p - \epsilon_d \approx 3$ eV}
+\textcolor{red}{\cite{schluter,stechel}}\textcolor{blue}{.}
+%Hamiltonian (5) is nonlinear in wave functions. Therefore, in
+%principle it can describe different spin-density distributions for the
+%same set of parameters.
+
+\vspace{10mm}
+\noindent
+In the AF ordered CuO$_2$ plane
+the elementary cell is doubled
+(the magnetic unit cell contains two CuO$_2$ units ).
+The copper on-site energies are given by
+
+\vspace{2mm}
+
+\noindent
+\textcolor{green}{
+$\epsilon_{1 \sigma}=\epsilon_d + U \langle n_{1-\sigma}^d \rangle,$
+$\epsilon_{2 \sigma}=\epsilon_d + U \langle n_{2-\sigma}^d \rangle.$ }
+
+\vspace{10mm}
+\noindent
+\textcolor{blue}{
+The Hamiltonian $ H_{\rm MF}^\sigma $ for the fixed
+spin direction $\sigma = \,\uparrow $ in $k$-space  basis and
+with the first and the forth states corresponding to the Cu states
+$\vert d_1 \rangle $ and $\vert d_4 \rangle $
+and the second, third, fifth, and sixth states corresponding to
+the 4 oxygen $\vert p_1 \rangle , \vert p_2 \rangle , \vert p_3
+\rangle $, and $ \vert p_4 \rangle$
+states surrounding the first Cu-site (counted counter-clockwise
+beginning from the right position), reads }
+
+
+\newpage
+
+\vspace{10mm}
+\[
+\langle \: k \sigma| H_{\rm MF}^\sigma | \, k \sigma\: \rangle =
+\vspace{10mm}
+\]
+$$
+=\left (
+\begin{array}{cccccc}
+\epsilon_1  & -2Ta_x & 2Ta_y & 0 & 2Ta_x^{\ast} & -2Ta_y^{\ast} \\
+-2Ta_x^{\ast} & \epsilon_p & 2tc & 2Ta_x &  0  &       -2tb \\
+2Ta_y^{\ast} & 2tc & \epsilon_p & -2Ta_y &   -2tb &       0 \\
+ 0  & 2Ta_x^{\ast} & -2Ta_y^{\ast} & \epsilon_2 & -2Ta_x & 2Ta_y \\
+2Ta_x & 0 & -2tb & -2Ta_x^{\ast} &       \epsilon_p &       2tc \\
+-2Ta_y & -2tb & 0 & 2Ta_y^{\ast} &       2tc &            \epsilon_p
+\end{array}
+\right )   \nonumber
+$$
+
+
+\vspace{2mm}
+\textcolor{blue}{
+$$
+a_{x,y} =  e^{i k_{x,y} (a/2) }/2 ,
+$$
+%\vspace{0.02cm}
+$$
+b = \cos [(k_x + k_y)(a/2)] , \ \ \
+%$$
+%$$
+c = \cos [(k_x - k_y)(a/2)],
+$$
+}
+%                                   (11)
+%                                   (12)
+%                                   (13)
+\vspace{0.1cm}
+\noindent
+\textcolor{green}{
+$a$ is the lattice constant. }
+%\vspace{10mm}
+
+
+\vspace{1cm}
+
+
+
+\noindent
+{\bf The expectation values of polarization are obtained
+from the self-consistent equations}
+\textcolor{magenta}{
+$$
+\langle n_{\sigma}^d \rangle = \sum_k \mid \phi_{ik} \mid ^2 ,
+$$
+}
+where $\phi_{ik}$ is the eigenvector of the Hamiltonian matrix,
+corresponding to the eigenvalues $E_k$.
+
+
+\noindent
+The second band (empty in the undoped case) has 4 minima
+in the ($\pm \pi / 2a ,\pm \pi /2a)$ points of the Brillouin zone.
+
+\vspace{10mm}
+\begin{center}
+\textcolor{magenta}{
+{\bf Wave packet of free hole.}}
+\end{center}
+\vspace{10mm}
+
+\noindent
+\textcolor{blue}{
+We are interested in the behavior of
+a large-size $L$ wave packet of an extra hole  added
+to the AF ground state.
+The wave-packet is presented in the form}
+
+\vspace{10mm}
+\noindent
+$$
+\vert \psi _L \rangle = \sum _{\vec{m} \prime} c_{\vec{m} \prime}
+a^{+}_{\vec{m} \prime}
+\vert 0 \rangle,
+$$
+
+\vspace{10mm}
+\noindent
+\textcolor{blue}{
+where $\vert 0 \rangle $ is the
+state with a filled lower Hubbard band.
+We choose $c_{\vec{m} \prime}$ in the exponential form:}
+
+\vspace{10mm}
+\[
+c_{\vec{m'}}= th (2 a'/L) e^{- 2 \left ( | m_{x'}| + |m_{y'}|
+\right ) a' / L + i \pi m_{x'}}.
+\]
+
+\noindent
+\textcolor{green}{$a'$ is a lattice constant in the AF case.}
+
+\newpage
+\noindent
+\textcolor{blue}{
+To find the value
+of the barrier between free- and ferron-hole
+states one should calculate the $L$-dependence of:}
+
+
+\vspace{10mm}
+\noindent
+\textcolor{magenta}{
+1) the energy of the wave packet of the free hole,}
+
+\vspace{5mm}
+\noindent
+\textcolor{magenta}{
+2) the energy of the latter packet when one spin is turned.}
+\textcolor{blue}{These calculations are performed self-consistently.}
+
+\vspace{10mm}
+\noindent
+One needs to calculate also the
+self-energy correction $(E_{SE})$ caused by the hole-spin interaction.
+At large $L$
+$E_{SE}$  is approximately equal to the $1/N_0$-th part of
+the self-energy correction of the $N_0$-particle state.
+
+\noindent
+The results  of calculations of $E_{SE}(L)$ as well as the full
+energy of the wave packet
+$\epsilon_L = E_{kin}(L) + E_{SE}(L)$
+are presented in Fig.1.
+
+\vspace{5mm}
+\noindent
+
+\newpage
+\begin{center}
+\textcolor{green}{
+{\bf Effect of turned spin.}}
+\end{center}
+
+\noindent
+To find the value of the barrier we
+consider how the energy of the hole wave
+packet of a large size is changed if one (central) Cu- spin
+is turned. Two following contributions to the energy change should
+be taken into account:
+
+\noindent
+\textcolor{magenta}{
+1) The increase of the energy due to a change of magnetic interactions
+with the turning of one spin.}
+\textcolor{blue}{
+We calculated   this energy by
+means of the Lifshitz Green's function method.
+For our parameters
+$E^{(S)} \sim 0.15 eV$.}
+
+\noindent
+\textcolor{magenta}{
+2) The decrease of the energy due to
+hybridization with a central Cu ion with a turned spin
+and surrounding oxygen ions.}
+The hybridization energy matrix reads
+
+\[
+H_h = \left (
+\begin{array}{ccc}
+\epsilon_L+E^{(S)} & \frac{T}{\sqrt{2}}A_L \cos \alpha & 0 \\
+\frac{T}{\sqrt{2}}A_L \cos \alpha & \epsilon_0 & T \sqrt{3} \\
+0 & T \sqrt{3} & \epsilon_2 \\
+\end{array} \nonumber
+\right ) ,
+\]
+where diagonal elements equal to the energies of the three states
+under consideration: \textcolor{blue}{ $\epsilon _L$
+is the energy of the free hole wave packet in the AF-ordered
+lattice with one turned spin,} \textcolor{green}{$\epsilon _0 = U \langle n
+_{\downarrow} \rangle- \epsilon - \epsilon_{min} $
+is the energy of the Cu-state as compared to the energy of the minimum of
+the hole zone,}
+\textcolor{blue}{
+$$\epsilon _2 = \frac {2T^2} {U-\epsilon} - \frac 4 3 t
+- \epsilon_{min} $$ is the energy of the symmetrized
+oxygen states as compared to the energy
+of the minimum of the hole zone}
+\textcolor{red}{\cite{schneider}}\textcolor{blue}{.}
+The lowest eigenvalue of this Hamiltonian
+$E_h$ as well as the energy
+of the free wave packet $\epsilon_L$ are
+presented in Fig.2. The corresponding curves cross for
+the wave packet size $L_b \approx 4a \prime$ (i.e. for the wave packet of
+32 CuO$_2$ units). The crossing energy (counted from the energy
+of the band minimum) is $E_b \approx 0.05 eV$ gives the energy
+of the barrier.}
+
+\noindent
+The calculated value of the barrier
+explains the rather long lifetime ($ \sim 1ms$)
+of optically-created charge carriers.
+
+\noindent
+It also agrees with the experimental value
+of the barrier for the hoping motion of the holes at
+low doping \textcolor{red}{\cite{kremer}}.
+
+%\newpage
+
+
+\begin{center}
+\textcolor{blue}{
+\bf{Stripes}}
+\end{center}
+
+\vspace{5mm}
+\noindent
+Our calculations show that at finite doping the spin-polaron states
+become less favorable and  at
+a critical concentration $\sim 0.5$ they turn out to be metastable.
+\textcolor{magenta}{
+We also have found that already at small hole
+concentrations phase separation of the charge carriers into domains
+with a local hole concentration $c\sim 0.5 - 0.6$ takes place.
+The free energy of the
+domain only weakly depends on its shape.}
+\textcolor{blue}{ As a result the formation of
+stripe domains with local hole concentrations close to the experimentally
+observed value of $c = 0.5$ can be explained.}
+
+
+
+
+
+
+\vspace{10mm}
+\newpage
+\begin{center}
+{\bf \textcolor{blue}{Conclusion.}}
+\end{center}
+\vspace{10mm}
+\noindent
+The localized and the metastable
+free-hole states in CuO$_2$ are separated by a barrier of the energy
+$E_b  \sim 0.05 eV$
+which can reveal itself in various kinetic phenomena.
+The barrier state has relatively large size ($\sim 32$ CuO$_2$
+units) and it is built-up from the band states in the vicinity of the M
+($\pi/2,\pi/2$) point of the Brillouin zone and from the localized Cu-state
+of the turned spin.
+
+\vspace{11mm}
+\noindent
+\textcolor{blue}{
+The barrier of such a height allows us to explain the experimentally observed
+coexistence of free and self-trapped hole states in high T$_c$
+superconductors. It is also consistent with the value of
+the activation barrier for the hopping motion of holes at low doping.}
+
+
+\newpage
+\vspace{11mm}
+\noindent
+At finite doping the spin-polaron states
+become less favorable and  at
+a critical concentration $\sim 0.5$ they turn out to be metastable.
+
+
+\vspace{11mm}
+\noindent
+\textcolor{magenta}{At small hole
+concentrations phase separation of the charge carriers into domains
+with a local hole concentration $c\sim 0.5 - 0.6$ takes place.
+The free energy of the
+domain only weakly depends on its shape. As a result the formation of
+stripe domains with local hole concentrations close to the experimentally
+observed value of $c = 0.5$ can be explained.}
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+\begin{thebibliography} {}
+
+\bibitem{oles}  A.M.Ole\'{s}, and J.Zaanen, Phys. Rev.
+   B {\bf 39}, 9175 (1989).
+
+\bibitem{siebold} G.Seibold, E.Sigmund, and V.Hizhnyakov, Phys.Rev.
+   B {\bf 48}, 7537 (1993).
+
+\bibitem{schluter} M.Schluter, J.Hybertsen, and N.E.Christensen,
+   Physica C {\bf 153}, 1217 (1988).
+
+\bibitem{stechel} E.B.Stechel and D.R Jennison, Phys.Rev. B {\bf 38},
+   4632 (1988).
+
+\bibitem{schneider} V.Hizhnyakov, E.Sigmund, and Schneider, Phys.Rev.
+   B {\bf 44}, 12639 (1991).
+
+\bibitem{kremer} R.K.Kremer, A.Simon, E.Sigmund,
+   and V.Hizhnyakov, Proc. of Estonian Academy of
+   Sciences , Physics {\bf 44}, 274 (1995).
+
+\end{thebibliography}}
+\end{Huge}
+
+\newpage
+
+\begin{LARGE}
+
+\noindent
+Figure 1:
+The mean hole energy $W$ in the CuO$_2$ plane
+with $ N_0$ additional holes of the same spin added to the  rigid (a)
+and self-consistent (b) AF lattices with $N$ elementary cells vs
+the concentration of additional holes $N_0 / N$.
+
+\vspace{1cm}
+
+\noindent
+Figure 2:
+The energy $E$ of the free-hole state in the AF-ordered lattice
+with one turned spin (a) and of the localized ferron state (b)
+vs the size of the states $L$.
+
+\vspace{1cm}
+
+\noindent
+Figure 3: Full ehergy of the crystall E
+vs hole concentration c in the hole-rich (stripe)
+region.
+Initial (mean) hole concentration is 0.05.
+
+\end{document}
+
+
+\begin{thebibliography} {}
+\bibitem{mott} N.F.Mott, J.Phys.:Condens.Matter {\bf 5}, 3487 (1993).
+
+\bibitem{hizhnyakov} V.Hizhnyakov and E.Sigmund, Physica C, {\bf 156},
+   655 (1988).
+
+\bibitem{tajima} S.Tajima, H.Ishii, T.Nakahashi, T.Takagi,
+   S.Ushida, and M.Seki, J.Opt.Soc.Am. B {\bf 6}, 475 (1989).
+
+\bibitem{mihailovic1} D.Mihailovic, C.M.Forster, K.Voss and
+   A.J.Heeger, Phys.Rev.B {\bf 42}, 7989 (1990).
+
+\bibitem{sigmund} V.Hizhnyakov, E.Sigmund, and G.Zavt, Phys.Rev.
+   B {\bf 44}, 12639 (1991).
+
+\bibitem{bianconi} A.Biancconi at al., Phys.Rev.Lett.
+    {\bf 76}, 3412 (1996).
+
+\bibitem{egami} T.Egami in "Physical Properties of High
+   Temperature Superconductors V" Ed.D.M.Ginsberg,
+   (World Scientific, 1996).
+
+\bibitem{pekar} M.Deigen and S.Pekar, ZETP {\bf 21}, 803 (1951) (in russian)
+
+\bibitem{rashba} E.I.Rashba, in "Excitons", ed. E.I.Rashba and
+   M.D.Sturge ch.13, (North-Holland 1982).
+
+\bibitem{zavt} A.Shelkan and G.Zavt, Proc. of Estonian Academy of
+   Sciences , Physics {\bf 39}, 358 (1990).
+
+\bibitem{footnote} The self-trapping barrier has earlier
+been estimated in
+\cite{sigmund}, where it is supposed that the minimum of the hole band
+is in $\Gamma$-point of the Brillouin zone. In fact, as it was already
+pointed above, according to our and other recent
+calculations there are 4 minima situated in the X- and
+the Y-points. Besides, the energy of the wave-packet of
+the free hole in \cite{sigmund} was calculated
+without taking account of the correlation energy caused by the Hubbard
+interaction. The account of both these factors (see the manuscript)
+results in a remarkable change
+($\sim 3$ times enlargement) of the value of the barrier.
+
+\bibitem{oles}  A.M.Ole\'{s}, and J.Zaanen, Phys. Rev.
+   B {\bf 39}, 9175 (1989).
+
+\bibitem{siebold} G.Seibold, E.Sigmund, and V.Hizhnyakov, Phys.Rev.
+   B {\bf 48}, 7537 (1993).
+
+\bibitem{schluter} M.Schluter, J.Hybertsen, and N.E.Christensen,
+   Physica C {\bf 153}, 1217 (1988).
+
+\bibitem{stechel} E.B.Stechel and D.R Jennison, Phys.Rev. B {\bf 38},
+   4632 (1988).
+
+\bibitem{o-o} A.Shelkan, G.Zavt, V.Hizhnyakov, and E.Sigmund,
+   Z.Phys. B {\bf 104}, 433 (1997).
+
+\bibitem{note} We underline that there indeed exists the self-consistent
+solution of the problem with one turned spin in the AF-ordered lattice
+with the energy $E^{(S)} \approx 0.15 eV$ (see above);
+the appearance of such solution reflects the stability
+of the spin configuration with one turned spin.
+
+\bibitem{schneider} V.Hizhnyakov, E.Sigmund, and Schneider, Phys.Rev.
+   B {\bf 44}, 12639 (1991).
+
+\bibitem{kremer} R.K.Kremer, A.Simon, E.Sigmund,
+   and V.Hizhnyakov, Proc. of Estonian Academy of
+   Sciences , Physics {\bf 44}, 274 (1995).
+
+\end{thebibliography}
